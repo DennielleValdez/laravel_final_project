@@ -7,98 +7,14 @@
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="../Frontend/css/home_style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
 <body> 
-    <div class="row">
-        <div class="col-md-12 mt-5">
-            <div class="logo d-flex justify-content-center align-items-center">
-                <img src="../img/LOGO/Hannah.png" class="d-block h-10" alt="...">
-            </div>
-        </div>
-    </div>
-    
-    <!-- NAVIGATION BAR -->
-    <div class="container sticky-top bg-light">
-        <nav class="navbar navbar-expand-lg mt-2">
-            <div class="container-fluid">
-            <!-- TOGGLER -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- NAV ITEMS / id= navbarItems-->
-            <div class="collapse navbar-collapse" id="navbarItems">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="homepage.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.php">About</a>
-                </li>
-
-            <!-- DROPDOWN -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Brands
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../Frontend/Dior.php">Dior</a></li>
-                    <li><a class="dropdown-item" href="../Frontend/EsteeLauder.php">Estee Lauder</a></li>
-                    <li><a class="dropdown-item" href="../Frontend/Olay.php">Olay</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../Frontend/allProducts.php">All Products</a></li>
-                    </ul>
-                </li>
-
-            <!-- CONTACT -->
-                <li class="nav-item">
-                    <a class="nav-link" href="..//Frontend/about.php#contact-form">Contact</a>
-                </li>
-                </ul>
-
-            
-
-            <!-- SEARCH BAR -->
-                <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-
-            <!-- CART, LOCATION, ACCOUNT -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
-                    </li>
-
-                    <!-- <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cartModal">
-                    <i class="fas fa-shopping-cart"></i>
-                    </button> -->
-                
-                    <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i> Location</a>
-                    </li>
-
-            <!-- MY ACCOUNT DROPDOWN -->
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user"></i> My Account</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Favorites</a></li>
-
-                        <li><a class="dropdown-item" href="carttable.php">Order Summary</a></li>
-
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="../User/logout.php">Logout</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-    </div>
+   
+    @include('layout.navbar')
 
     {{-- BANNER --}}
 
@@ -154,16 +70,97 @@
             </div>
         </div>
 
-
     {{-- TAKE THE TEST --}}
         <div class="col-md-12 mt-5 d-flex justify-content-center align-items-center">
-            <h1>Discover your skin type</h1>
+            <h2>Discover your skin type</h2>
         </div>
         <div class="col-md-12 mt-2 d-flex justify-content-center align-items-center">
-            <button class="btn btn-outline-dark">Take the test now</button>
+            <button class="btn btn-outline-dark mt-3">Take the test now</button>
         </div>
+        <br><hr>
 
     {{-- WHATS NEW --}}
+        <div class="row">
+            {{-- OLAY CLEANSER --}}
+            <div class="col-md-6">
+                <div class="whatsNew-text">
+                    <h2>Meet the Official Facial Cleanser of Team USA</h2>
+                    <p>We assembled a team of all-star athletes to bring you a NEW kind of daily facial cleansers: CLeansing Melts! Try for yourself</p>
+                    <br>
+                    {{-- SHOP NOW BUTTON --}}
+                    <button class="btn btn-outline-dark">SHOP NOW</button>
+                </div>
+            </div>
+        
+            <div class="col-md-6">
+                <div class="whatsNew-img">
+                    <img src="../homeimg/olaymelts.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+            {{-- STEPS --}}
+            <div class="col-md-6">
+                <div class="whatsNew-img">
+                    <img src="../homeimg/steps.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="whatsNew-text">
+                    <h2>Step-by-Step Guide to Using Skincare Products</h2>
+                    <p>Welcome to our comprehensive guide on how to use skincare products effectively. Proper application is key to maximizing the benefits of your skincare routine. Whether you are a skincare newbie or a seasoned enthusiast, our step-by-step guide will help you get the most out of your products.</p>
+                    <br>
+                    {{-- SHOP NOW BUTTON --}}
+                    <button class="btn btn-outline-dark">LEARN MORE</button>
+                </div>
+            </div>
+            <hr>
+
+        {{-- BEST SELLERS --}}
+            <div class="col-md-12 mt-3">
+                <h2>BRANDS:</h2>
+            </div>
+
+            {{-- PRODUCT CARDS FROM DATA BASE --}}
+            <div class="col-md-2 mt-3">
+                <a href="">
+                    <img src="../homeimg/olaylogo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+
+            <div class="col-md-2 mt-3">
+                <a href="">
+                    <img src="../homeimg/esteelogo.jpg" alt="Logo" class="logo">
+                </a>
+            </div>
+
+            <div class="col-md-2 mt-3">
+                <a href="">
+                    <img src="../homeimg/diorlogo.webp" alt="Logo" class="logo">
+                </a>
+            </div>
+
+            <div class="col-md-2 mt-3">
+                <a href="">
+                    <img src="../homeimg/cliniquelogo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+
+            <div class="col-md-2 mt-3">
+                <a href="">
+                    <img src="../homeimg/sbmlogo.webp" alt="Logo" class="logo">
+                </a>
+            </div>
+
+           
+        </div>
+        
+
+
+
+
+
+
     </div>
   
 

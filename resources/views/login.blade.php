@@ -14,32 +14,25 @@
 </head>
 <body>
     @include('layout.navbar')
+    
     <div class="container">
         <div class="card">
             <div class="card-body">
-                <h1>Sign-Up Form</h1>
-                <hr>
-                <form action="/signup" method="POST">
+                <h1>Login Page</h1>
+                <form action="/login" method="POST">
                     @csrf
-                    <label>First Name:</label>
-                    <input type="text" class="form-control" name="fname">
+                    <label>Username</label>
+                    <input type="text" name="username" class="form-control">
                     <br>
-                    <label>Last Name:</label>
-                    <input type="text" class="form-control" name="lname">
-                    <br>
-                    <label>Email:</label>
-                    <input type="email" class="form-control" name="email">
-                    <br>
-                    <label>Password:</label>
-                    <input type="password" class="form-control" name="password">
-                    <br>
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control">
                     <hr>
-                    <input type="submit" class="btn btn-primary w-100">
+                    <input type="submit" class="btn btn-primary w-100" value="Login">
                 </form>
             </div>
         </div>
     </div>
 
-    @include('layout.footer')
+    {{-- @include('layout.footer') --}}
 </body>
 </html>

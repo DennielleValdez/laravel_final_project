@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarItems">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="homepage.php">Home</a>
+                <a class="nav-link" aria-current="page" href="welcome.blade.php">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="about.php">About</a>
@@ -59,10 +59,6 @@
                 <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
                 </li>
 
-                <!-- <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cartModal">
-                <i class="fas fa-shopping-cart"></i>
-                </button> -->
-            
                 <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i> Location</a>
                 </li>
@@ -72,12 +68,18 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user"></i> My Account</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Favorites</a></li>
-
                     <li><a class="dropdown-item" href="carttable.php">Order Summary</a></li>
-
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="../User/logout.php">Logout</a></li>
                 </ul>
+                </li>
+                
+                <!-- SIGN UP & LOG IN -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt"></i> Log In</a>
                 </li>
             </ul>
         </div>

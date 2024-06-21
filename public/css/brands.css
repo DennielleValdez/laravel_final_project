@@ -1,0 +1,116 @@
+/* FEATURED ARTICLE AND TIPS */
+.card-title{
+    font-size: 15px;
+}
+
+.card{
+    box-shadow: 3px 3px 10px #212529;
+}
+
+/* NEWS LETTER */
+.newsletter-container {
+    background-color: #e9ecef;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.newsletter-container h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.join-container {
+    background-color: #aca49da8;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.join-container h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: gray;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: rgb(71, 69, 69);
+}
+
+/* FOOTER */
+.footer-container {
+    background-color: #f8f9fa;
+    color: #212529;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-container h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 10px;
+}
+
+.footer-container ul li a {
+    color: #212529;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+    color: #007bff;
+}
+
+.footer-container .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-container .social-icons a {
+    color: #212529;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-container .social-icons a:hover {
+    color: #007bff;
+}
+
+/* Footer bottom text */
+.footer-container .text-center {
+    border-top: 1px solid #dee2e6;
+    padding-top: 10px;
+}
+
+.footer-container .text-center p {
+    margin-bottom: 0;
+}

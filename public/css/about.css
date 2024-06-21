@@ -1,25 +1,31 @@
-html body{
-    /* background-color: black; */
+.aboutImg{
+    padding: 80px;
+}
+.aboutText{
+    padding: 100px;
+
 }
 
-.navbar-toggler{
-    color: black;
+.journeyImg{
+    margin-top: 50px;
+    padding: 80px;
 }
 
-/* WHATS NEW */
-
-.whatsNew-text{
-    padding:100px;
+.philosophyText{
+    padding: 50px;
 }
 
-.whatsNew-img{
-    padding:20px;
+.commitmentText{
+    padding: 50px;
 }
 
-/* BRANDS */
+.joinText{
+    padding: 50px;
+}
 
-.card {
-    box-shadow: 3px 3px 10px #212529;
+/* ICONS */
+.card-icon{
+    padding: 20px;
 }
 
 /* FOOTER */

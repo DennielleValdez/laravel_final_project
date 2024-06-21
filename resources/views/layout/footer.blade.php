@@ -60,7 +60,7 @@
         </div>
     
         <div class="text-center py-2">
-            <p class="mb-0">&copy; 2024 SkinBliss. All rights reserved.</p>
+            <p class="mb-0">&copy; 2024 RadiantRituals. All rights reserved.</p>
         </div>
     </footer>
 </div>

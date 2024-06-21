@@ -10,10 +10,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
 </head>
 <body> 
-   
     @include('layout.navbar')
 
     {{-- BANNER --}}
@@ -122,37 +120,73 @@
             </div>
 
             {{-- PRODUCT CARDS FROM DATA BASE --}}
-            <div class="col-md-2 mt-3">
-                <a href="">
-                    <img src="../homeimg/olaylogo.png" alt="Logo" class="logo">
-                </a>
+
+
+            <div class="col-md-1 mt-3">
+                <h1></h1>
             </div>
 
+            {{-- OLAY --}}
             <div class="col-md-2 mt-3">
-                <a href="">
-                    <img src="../homeimg/esteelogo.jpg" alt="Logo" class="logo">
-                </a>
+                <div class="card-container">
+                    <div class="card fixed-size-card" id="brandCards">
+                      <a href="Olay.php">
+                        <img src="../homeimg/olay.png" class="card-img fixed-size-image" alt="...">
+                        </a>
+                    </div>
+                </div>
             </div>
 
+            {{-- ESTEE LAUDER --}}
             <div class="col-md-2 mt-3">
-                <a href="">
-                    <img src="../homeimg/diorlogo.webp" alt="Logo" class="logo">
-                </a>
+                <div class="card-container">
+                    <div class="card fixed-size-card" id="brandCards">
+                      <a href="Olay.php">
+                        <img src="../homeimg/esteelauder.png" class="card-img fixed-size-image" alt="...">
+                        </a>
+                    </div>
+                </div>
             </div>
 
+            {{-- DIOR --}}
             <div class="col-md-2 mt-3">
-                <a href="">
-                    <img src="../homeimg/cliniquelogo.png" alt="Logo" class="logo">
-                </a>
+                <div class="card-container">
+                    <div class="card fixed-size-card" id="brandCards">
+                      <a href="Olay.php">
+                        <img src="../homeimg/dior.png" class="card-img fixed-size-image" alt="...">
+                        </a>
+                    </div>
+                </div>
             </div>
 
+            {{-- CLINIQUE --}}
             <div class="col-md-2 mt-3">
-                <a href="">
-                    <img src="../homeimg/sbmlogo.webp" alt="Logo" class="logo">
-                </a>
+                <div class="card-container">
+                    <div class="card fixed-size-card" id="brandCards">
+                      <a href="Olay.php">
+                        <img src="../homeimg/clinique.png" class="card-img fixed-size-image" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+             {{-- SOME BY MI --}}
+             <div class="col-md-2 mt-3">
+                <div class="card-container">
+                    <div class="card fixed-size-card" id="brandCards">
+                      <a href="Olay.php">
+                        <img src="../homeimg/somebymi.png" class="card-img fixed-size-image" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-1 mt-3">
+                <h1></h1>
             </div>
 
            
+
         </div>
         
 

@@ -1,0 +1,44 @@
+.card{
+    width: 500px;
+    border-style: none;
+}
+
+.card h1{
+    font-size: 20px;
+}
+
+.card label{
+    font-size: 15px;
+}
+
+.carousel-inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item img{
+    border-radius: 50px;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOG IN */
+
+.loginCard{
+    width: 500px;
+}
+
+.loginCard h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.loginCard h2{
+    font-size: 15px;
+    text-align: center;
+}

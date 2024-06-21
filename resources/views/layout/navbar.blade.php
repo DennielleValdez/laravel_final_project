@@ -19,10 +19,10 @@
         <div class="collapse navbar-collapse" id="navbarItems">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="welcome.blade.php">Home</a>
+                <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.php">About</a>
+                <a class="nav-link" href="/about">About</a>
             </li>
 
         <!-- DROPDOWN -->
@@ -31,17 +31,19 @@
                 Brands
                 </a>
                 <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Frontend/Dior.php">Dior</a></li>
-                <li><a class="dropdown-item" href="../Frontend/EsteeLauder.php">Estee Lauder</a></li>
-                <li><a class="dropdown-item" href="../Frontend/Olay.php">Olay</a></li>
+                <li><a class="dropdown-item" href="/olay">Olay</a></li>
+                <li><a class="dropdown-item" href="/esteelauder">Estee Lauder</a></li>
+                <li><a class="dropdown-item" href="/dior">Dior</a></li>
+                <li><a class="dropdown-item" href="/clinique">Clinique</a></li>
+                <li><a class="dropdown-item" href="/somebymi">Some by Mi</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Frontend/allProducts.php">All Products</a></li>
+                <li><a class="dropdown-item" href="/allproducts">All Products</a></li>
                 </ul>
             </li>
 
         <!-- CONTACT -->
             <li class="nav-item">
-                <a class="nav-link" href="..//Frontend/about.php#contact-form">Contact</a>
+                <a class="nav-link" href="/about#contact-form">Contact</a>
             </li>
             </ul>
 
@@ -70,17 +72,24 @@
                     <li><a class="dropdown-item" href="#">Favorites</a></li>
                     <li><a class="dropdown-item" href="carttable.php">Order Summary</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../User/logout.php">Logout</a></li>
+                    
+                    {{-- LOG OUT --}}
+                    @if (Session::get('id'))
+                        <li><a class="dropdown-item" href="../User/logout.php">Logout</a></li>
+                    @else
+
+                     <!-- SIGN UP & LOG IN -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt"></i> Log In</a>
+                    </li>
+                    @endif
                 </ul>
                 </li>
                 
-                <!-- SIGN UP & LOG IN -->
-                <li class="nav-item">
-                    <a class="nav-link" href="/signup"><i class="fas fa-user-plus"></i> Sign Up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt"></i> Log In</a>
-                </li>
+               
             </ul>
         </div>
         </div>

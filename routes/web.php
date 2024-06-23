@@ -53,13 +53,22 @@ Route::post('/login', [UserController::class, 'login']);
 // Product routes
 Route::get('/productindex', [ProductController::class, 'index']);
 
-Route::get('/create', [ProductController::class, 'create']);
-
 // Create Product form
 Route::get('/productindex', [ProductController::class, 'create_product_form']);
 
+// Edit product form
+Route::get('/productindex/edit_product/{id}', [ProductController::class, 'edit_product_form']);
+
+// Wala to sa controller
+// Route::get('/create', [ProductController::class, 'create']);
+
 // Create Product 
 Route::post('/productindex', [ProductController::class, 'create_product']);
+// Delete
+Route::delete('/productindex/{id}', [ProductController::class, 'delete_product']);
+
+// Edit product
+Route::put('/productindex/{id}', [ProductController::class, 'edit_product']);
 
 // View page na product 
 Route::get('/productindex/{id}', [ProductController::class, 'single_page']);

@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* PROFILE PICTURE */
+.navbar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar .logo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 5px 5px 15px #160202;
+}
+
+/* MAIN NAVBAR */
+.navbar {
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(58, 56, 56, 0.678);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.navbar .logo img {
+    height: 50px;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.navbar ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.navbar ul li:hover {
+    background-color: #505055a8;
+    border-radius: 5px;
+}
+.navbar ul li i {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.main-content {
+    margin-left: 250px; /* Adjust this width according to your sidebar width */
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh; /* Full viewport height */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust this width according to your sidebar width */
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+/* SINGLE PAGE */
+
+.SinglePageContainer {
+    margin-left: 250px;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+    box-shadow: 5px 5px 15px #1602024d;
+}

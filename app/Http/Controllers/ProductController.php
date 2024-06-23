@@ -9,6 +9,45 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    // EDIT TEACHERS INFO
+    public function edit_product(Request $r, string $id){
+        $editproduct = Product::where('id', '=', $id)
+        ->update(
+                [
+                    'product_brand' => $r->input('product_brand'),
+                    'product_category' => $r->input('product_category'),
+                    'product_name' => $r->input('product_name'),
+                    'product_img' => $r->input('product_img'),
+                    'product_description' => $r->input('product_description'),
+                    'product_price' => $r->input('product_price'),
+                    'skin_type' => $r->input('skin_type'),
+                ]
+            );
+            return redirect ('productindex');
+    }
+    
+    public function edit_product_form(string $id){
+        $editproduct = Product::query()
+        ->select("*")
+        ->where('id', '=', $id)
+        ->get()
+        ->first();
+
+        $product = Product::query()
+        ->select('*')
+        ->get();
+
+        return view('edit_product', compact('editproduct', 'product'));
+    }
+
+    // Delete product
+    public function delete_product(string $id){
+        $deleteproduct = Product::where('id', '=', $id)
+        ->delete();
+
+        return redirect("productindex");
+    }
+
     // View page ni Product
     public function single_page(string $id){
         $product = Product::query()

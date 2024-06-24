@@ -165,7 +165,7 @@
                         <td>{{$p -> product_brand}}</td>
                         <td>{{$p -> product_category}}</td>
                         <td>{{$p -> product_name}}</td>
-                        <td>{{$p -> product_img}}</td>
+                        <td><img src="img/{{$p -> product_img}}" alt="" class="w-100"></td>
                         <td>{{$p -> product_description	}}</td>
                         <td>{{$p -> product_price}}</td>
                         <td>{{$p -> skin_type}}</td>

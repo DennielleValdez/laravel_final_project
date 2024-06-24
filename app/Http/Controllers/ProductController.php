@@ -7,9 +7,11 @@ use DB;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
+
+
 class ProductController extends Controller
 {
-    // EDIT TEACHERS INFO
+    // EDIT PRODUCT INFO
     public function edit_product(Request $r, string $id){
         $editproduct = Product::where('id', '=', $id)
         ->update(
@@ -60,16 +62,27 @@ class ProductController extends Controller
     }
 
     // Create a Products 
-    public function create_product(Request $r){
+    public function create_product(Request $request){
+
         $newproduct = new Product;
 
-        $newproduct->product_brand = $r->input('product_brand');
-        $newproduct->product_category = $r->input('product_category');
-        $newproduct->product_name = $r->input('product_name');
-        $newproduct->product_img = $r->input('product_img');
-        $newproduct->product_description = $r->input('product_description');
-        $newproduct->product_price = $r->input('product_price');
-        $newproduct->skin_type = $r->input('skin_type');
+        $file = $request->file('product_img');
+        // Gathering Data
+
+        $filenameextension = time() . "." . $request->product_img->extension();
+
+        $filename = $request->getSchemeAndHttpHost() . "/img/" . $filenameextension; 
+        // Generating of image name
+        $request->product_img->move(public_path('/img/'), $filename);
+
+        $newproduct->product_brand = $request->input('product_brand');
+        $newproduct->product_category = $request->input('product_category');
+        $newproduct->product_name = $request->input('product_name');
+        $newproduct->product_img = $filenameextension;
+        $newproduct->product_description = $request->input('product_description');
+        $newproduct->product_price = $request->input('product_price');
+        $newproduct->skin_type = $request->input('skin_type');
+        // $newproduct->id = Session::get('id');
         $newproduct->save();
 
         return redirect("productindex");
@@ -79,6 +92,7 @@ class ProductController extends Controller
     public function create_product_form(){
         $product = Product::query()
         ->select('*')
+        // ->where('product_brand', 'Olay')
         ->get();
 
         return view('productindex', compact('product'));

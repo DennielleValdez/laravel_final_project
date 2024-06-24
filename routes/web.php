@@ -4,13 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 
-// Product routes
 
-// Route::get('/productindex', [ProductController::class, 'create'])->name('products.create');
-// Route::post('/productindex', [ProductController::class, 'store'])->name('products.store');
-// Route::get('/productindex', [ProductController::class, 'edit'])->name('products.edit');
-// Route::put('/products/{product}', [ProductController::class, 'update'])->name('products.update');
-// Route::delete('/products/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
 
 // Home and other pages
 Route::get('/', function () {
@@ -57,7 +51,9 @@ Route::get('/productindex', [ProductController::class, 'index']);
 Route::get('/productindex', [ProductController::class, 'create_product_form']);
 
 // Edit product form
-Route::get('/productindex/edit_product/{id}', [ProductController::class, 'edit_product_form']);
+Route::get('productindex/edit_product/{id}', [ProductController::class, 'edit_product_form']);
+
+
 
 // Wala to sa controller
 // Route::get('/create', [ProductController::class, 'create']);
@@ -68,6 +64,8 @@ Route::post('/productindex', [ProductController::class, 'create_product']);
 Route::delete('/productindex/{id}', [ProductController::class, 'delete_product']);
 
 // Edit product
+Route::get('/product/edit_product/{id}', [ProductController::class, 'edit_product_form']);
+
 Route::put('/productindex/{id}', [ProductController::class, 'edit_product']);
 
 // View page na product 

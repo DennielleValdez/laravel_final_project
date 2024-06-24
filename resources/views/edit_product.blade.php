@@ -68,7 +68,8 @@
                         </select>
                         
                         <hr>
-                        <input type="submit" class="btn btn-outline-secondary w-100" value="Save Changes">
+                        <input type="submit" class="btn btn-outline-secondary w-100" value="Go back">
+                        <input type="submit" class="btn btn-outline-secondary w-100 mt-3" value="Save Changes">
                     </form>
                 </div>
             </div>

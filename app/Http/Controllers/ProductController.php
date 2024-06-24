@@ -11,6 +11,54 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    // Some By Mi Show products
+    public function showSomeByMiProducts() {
+    // Fetch only Some By Mi products from the database
+    $someByMiProducts = Product::where('product_brand', 'Some By Mi')->get();
+    return view('Somebymi', compact('someByMiProducts'));
+    }
+    
+
+
+    // Clinique Show products
+    public function showCliniqueProducts() {
+    // Fetch only Clinique products from the database
+    $cliniqueProducts = Product::where('product_brand', 'Clinique')->get();
+    return view('Clinique', compact('cliniqueProducts'));
+    }
+
+
+    // Dior Show products
+    public function showDiorProducts() {
+    // Fetch only Dior products from the database
+    $diorProducts = Product::where('product_brand', 'Dior')->get();
+    return view('Dior', compact('diorProducts'));
+    }
+
+
+    // Estee Lauder Show products
+    public function showEsteeLauderProducts() {
+    // Fetch only Estee Lauder products from the database
+    $esteeLauderProducts = Product::where('product_brand', 'Estee Lauder')->get();
+    return view('EsteeLauder', compact('esteeLauderProducts'));
+    }
+    
+    
+    // Olay Show products
+    public function showOlayProducts() {
+        // Fetch only Olay products from the database
+        $olayProducts = Product::where('product_brand', 'Olay')->get();
+        return view('Olay', compact('olayProducts'));
+    }
+
+
+    // All Products show
+    public function showAllProducts() {
+        $products = Product::paginate(10); // Fetch all products from the database
+        
+        return view('allProducts', compact('products'));
+    }
+
     // EDIT PRODUCT INFO
     public function edit_product(Request $r, string $id){
         $editproduct = Product::where('id', '=', $id)
@@ -98,5 +146,4 @@ class ProductController extends Controller
         return view('productindex', compact('product'));
     }
 
-    
 }

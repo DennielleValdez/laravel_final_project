@@ -70,3 +70,25 @@ Route::put('/productindex/{id}', [ProductController::class, 'edit_product']);
 
 // View page na product 
 Route::get('/productindex/{id}', [ProductController::class, 'single_page']);
+
+// All products page 
+Route::get('/allproducts', [ProductController::class, 'showAllProducts']);
+
+// Olay show products
+Route::get('/olay', [ProductController::class, 'showOlayProducts']);
+
+
+// Estee Lauder Show products
+Route::get('/esteelauder', [ProductController::class, 'showEsteeLauderProducts']);
+
+
+// Dior Show products 
+Route::get('/dior', [ProductController::class, 'showDiorProducts']);
+
+
+// Clinique Show products 
+Route::get('/clinique', [ProductController::class, 'showCliniqueProducts']);
+
+
+// Some By Mi Show products 
+Route::get('/somebymi', [ProductController::class, 'showSomeByMiProducts']);

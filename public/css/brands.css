@@ -114,3 +114,41 @@
 .footer-container .text-center p {
     margin-bottom: 0;
 }
+
+/* PRODUCT CARDS */
+
+.ProductCard{
+    box-shadow: 1px 1px 10px #212529;
+    padding: 30px;
+}
+
+.ProductCard img{
+    padding: 15px;
+}
+
+.ProductCard-title{
+    font-size: 15px;
+}
+
+.ProductCard-text{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fixed-size-card {
+    width: 250px; 
+    height: 450px;
+    overflow: hidden;
+}
+
+.truncate-1-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* PAGINATION */
+
+.pagination a{
+    color: black;
+}

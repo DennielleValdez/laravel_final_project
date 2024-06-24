@@ -136,7 +136,21 @@
             <!-- Product Table -->
         
             <br>
-            <h2>Product List:</h2>
+            
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Product List:</h2>
+                </div>
+
+                <div class="col-md-4">
+                     <!-- SEARCH BAR -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+
             <br>
             <table class="table table-hover table-bordered">
                 <div class="d-flex justify-content-center align-items-center">
@@ -165,7 +179,7 @@
                         <td>{{$p -> product_brand}}</td>
                         <td>{{$p -> product_category}}</td>
                         <td>{{$p -> product_name}}</td>
-                        <td><img src="img/{{$p -> product_img}}" alt="" class="w-100"></td>
+                        <td class="d-flex justify-content-center align-items-center"><img src="img/{{$p -> product_img}}" alt="" class="w-80" height="60vh"></td>
                         <td>{{$p -> product_description	}}</td>
                         <td>{{$p -> product_price}}</td>
                         <td>{{$p -> skin_type}}</td>

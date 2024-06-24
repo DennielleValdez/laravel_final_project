@@ -20,26 +20,34 @@
     </div>
     
     <div class="container">
-    <div class="SinglePageContainer mt-5">
+        <div class="SinglePageContainer mt-5">
         <h3>Product details:</h3>
-        <div class="card mt-3">
-            <div class="card-body">
-                
-                    
-                
-                <form action="/view_product"  enctype="multipart/form-data">
-                @csrf
-
-                <p><b>Product Brand:</b><h5>{{$product->product_brand}}</h5></p>
-                <p><b>Category:</b><h5>{{$product->product_category}}</h5></p>
-                <p><b>Product Name:</b><h5>{{$product->product_name}}</h5></p>
-                <b>Product Image:</b><img src="/img/{{$product->product_img}}" alt="" class="w-100">
-                <p><b>Product Description:</b><h5>{{$product->product_description}}</h5></p>
-                <p><b>Product Price:</b><h5>{{$product->product_price}}</h5></p>
-                <a class="btn btn-outline-secondary w-100" href="{{url('productindex')}}">Go back</a>
-                </form>
-
-                
+            <div class="card mt-3">
+                <div class="card-body">
+                    <form action="/view_product"  enctype="multipart/form-data">
+                    @csrf
+                    <div class="row">
+                        {{-- DETAILS --}}
+                        <div class="col-md-6">
+                            <p><b>Product Brand:</b><h5>{{$product->product_brand}}</h5></p>
+                            <p><b>Category:</b><h5>{{$product->product_category}}</h5></p>
+                            <p><b>Product Name:</b><h5>{{$product->product_name}}</h5></p>
+                            <p><b>Product Description:</b><h5>{{$product->product_description}}</h5></p>
+                            <p><b>Product Price:</b><h5>{{$product->product_price}}</h5></p>
+                        </div>
+                        {{-- IMAGE --}}
+                        <div class="col-md-6">
+                            <b>Product Image:</b><br><img src="/img/{{$product->product_img}}" alt="" class="w-60" height="400vh">
+                        </div>
+                        <br>
+                        <hr><br>
+                        {{-- GO BACK BUTTON --}}
+                        <div class="col-md-12">
+                            <a class="btn btn-outline-secondary w-100" href="{{url('productindex')}}">Go back</a>
+                        </div>
+                    </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

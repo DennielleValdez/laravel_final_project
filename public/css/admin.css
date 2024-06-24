@@ -91,6 +91,14 @@ body {
     margin-left: 250px;
     padding: 20px;
     overflow-y: auto;
-    height: 100vh;
+    height: 68vh;
+    box-shadow: 5px 5px 15px #1602024d;
+}
+
+.EditPageContainer {
+    margin-left: 250px;
+    padding: 20px;
+    overflow-y: auto;
+    height: 68vh;
     box-shadow: 5px 5px 15px #1602024d;
 }

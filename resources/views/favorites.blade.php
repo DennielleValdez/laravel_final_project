@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Page</title>
+    <title>Favorites Page</title>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
@@ -15,14 +15,14 @@
     @include('layout.navbar')
 
     <div class="container mt-5">
-        <h3>Shopping Cart:</h3>
+        <h3>Favorites:</h3>
         <br>
         @if(session('success'))
             <div class="alert alert-success">
                 {{ session('success') }}
             </div>
         @endif
-        @if(session('cart') && !empty(session('cart')))
+        @if(session('favorites') && !empty(session('favorites')))
             <table class="table table-hover table-bordered">
                 <thead>
                     <tr>
@@ -31,19 +31,28 @@
                         <th>Product Price</th>
                         <th>Quantity</th>
                         <th>Total</th>
+                        <th>Add to Cart</th>
                         <th>Remove</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach(session('cart') as $id => $details)
+                    @foreach(session('favorites') as $id => $details)
                         <tr>
                             <td class="d-flex justify-content-center align-items-center"><img src="/img/{{ $details['image'] }}" height="80px" width="90px"></td>
                             <td>{{ $details['name'] }}</td>
                             <td>${{ $details['price'] }}</td>
                             <td>{{ $details['quantity'] }}</td>
                             <td>${{ $details['total'] }}</td>
+                            {{-- ADD TO CART BUTTON FROM FAVORITES--}}
                             <td>
-                                <form action="{{ route('cart.remove', $id) }}" method="POST">
+                                <form action="{{ route('cart.add', $id) }}" method="POST">
+                                    @csrf
+                                    <button type="submit" class="btn"><i class="fas fa-shopping-cart"></i> </button>
+                                </form>
+                            </td>
+                            {{-- DELETE FAVORITES --}}
+                            <td>
+                                <form action="{{ route('favorites.remove', $id) }}" method="POST">
                                     @csrf
                                     <button type="submit" class="btn"><i class="fas fa-trash-alt"></i></button>
                                 </form>
@@ -52,12 +61,11 @@
                     @endforeach
                 </tbody>
             </table>
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-end">
                 <h4>Total Amount: ${{ $total }}</h4>
-                <a href="" class="btn btn-secondary"><i class="fas fa-credit-card"></i> Proceed to Checkout</a>
             </div>
         @else
-            <p>Your cart is empty.</p>
+            <p>Your favorites is empty.</p>
         @endif
     </div>
 

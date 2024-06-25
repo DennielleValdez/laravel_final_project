@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\FaveController;
 
 
 
@@ -100,11 +101,9 @@ Route::get('/clinique', [ProductController::class, 'showCliniqueProducts']);
 // Some By Mi Show products 
 Route::get('/somebymi', [ProductController::class, 'showSomeByMiProducts']);
 
-// SENSITIVE SKIN 
-Route::get('/allproducts', [ProductController::class, 'showAllProducts']);
 
 // User Accounts
-Route::get('/userAccounts', [UserController::class, 'showSensitiveSkin']);
+Route::get('/userAccounts', [UserController::class, 'show_UserAccounts']);
 
 // User Accounts
 Route::get('/adminAccounts', [UserController::class, 'show_AdminAccounts']);
@@ -117,3 +116,9 @@ Route::get('/logout', [UserController::class, 'logout']);
 Route::get('/cart', [CartController::class, 'viewCart'])->name('cart.view');
 Route::post('/cart/add/{id}', [CartController::class, 'addToCart'])->name('cart.add');
 Route::post('/cart/remove/{id}', [CartController::class, 'removeFromCart'])->name('cart.remove');
+
+
+// FAVORITES TABLE
+Route::get('/favorites', [FaveController::class, 'viewFavorites'])->name('favorites.view');
+Route::post('/favorites/add/{id}', [FaveController::class, 'addToFavorites'])->name('favorites.add');
+Route::post('/favorites/remove/{id}', [FaveController::class, 'removeFromFavorites'])->name('favorites.remove');

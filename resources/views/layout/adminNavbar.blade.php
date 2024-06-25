@@ -19,7 +19,7 @@
             </a>
 
             <li><i class="fas fa-chart-line"></i> Overview</li>
-            <li><i class="fas fa-user"></i> Customer</li>
+            <li><i class="fas fa-user"></i>Orders</li>
             <li><i class="fas fa-envelope"></i> Message <span style="color: #e91e63; margin-left: auto;">•</span></li>
             <li><i class="fas fa-cog"></i> Setting</li>
             <br>

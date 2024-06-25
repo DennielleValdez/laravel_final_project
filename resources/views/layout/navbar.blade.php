@@ -58,7 +58,7 @@
         <!-- CART, LOCATION, ACCOUNT -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+                <a class="nav-link" href="/cart"><i class="fas fa-shopping-cart"></i> Cart</a>
                 </li>
 
                 <li class="nav-item">

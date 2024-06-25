@@ -84,9 +84,13 @@
 
                                 {{-- BUTTONS --}}
                                 <div class="ProductCard-footer mt-2">
-                                <a href="/productindex/{{ $product->id }}" class="btn btn-outline-secondary w-100"> <i class="fas fa-heart"></i> Add to Favorites</a>
-                                <br>
-                                <a href="/productindex/{{ $product->id }}" class="btn btn-outline-secondary w-100 mt-2"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                                    <a href="/productindex/{{ $product->id }}" class="btn btn-outline-secondary w-100"> <i class="fas fa-heart"></i> Add to Favorites</a>
+                                    <br>
+                                    <!-- Add to Cart Button -->
+                                    <form action="{{ route('cart.add', $product->id) }}" method="POST" class="mt-2">
+                                        @csrf
+                                        <button type="submit" class="btn btn-outline-secondary w-100"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>

@@ -67,13 +67,20 @@ class UserController extends Controller
     // SHOW USER ACCOUNT DETAILS
     public function show_UserAccounts()
     {
-        $user = UsersTable::query()
-            ->select('*')
-            ->get();
-
+        $user = UsersTable::where('user_role', '0')->get();
+        
         return view('userAccounts', compact('user'));
     }
 
+     // SHOW ADMIN ACCOUNT DETAILS
+    public function show_AdminAccounts()
+    {
+        $admin = UsersTable::where('user_role', '1')->get();
+        
+        return view('adminAccounts', compact('admin'));
+    }
+
+    // SHOW SIGN UP
     public function show_signup()
     {
         return view('signup');

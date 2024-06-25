@@ -24,12 +24,12 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-8">
-                <h3>User Accounts:</h3>
+                <h3>Admin Accounts:</h3>
             </div>
         </div>
 
         <br>
-    
+
         <table class="table table-hover table-bordered">
             <thead class="table-secondary">
                 <tr>
@@ -40,14 +40,14 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($user as $u)
+                @foreach ($admin as $u)
                 <tr>
                     {{-- Here we will put numbering using js? --}}
                     <td></td>
 
                     <td>{{$u->user_fname}}</td>
                     <td>{{$u->user_lname}}</td>
-                    <td>{{$u->user_email}}</td>
+                    <td>{{$u->user_email}}</td>    
                 </tr>
                 @endforeach
             </tbody>

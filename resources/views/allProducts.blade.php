@@ -92,9 +92,9 @@
                         </div>
                     </div>
                     @endforeach
-
                 </div>
                 <br>
+                
                 {{-- PAGINATION --}}
                 <div class="col-md-12 mt-3 d-flex justify-content-center align-items-center">
                     <nav aria-label="Page navigation example">

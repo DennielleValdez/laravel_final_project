@@ -65,6 +65,7 @@ Route::get('productindex/edit_product/{id}', [ProductController::class, 'edit_pr
 
 // Create Product 
 Route::post('/productindex', [ProductController::class, 'create_product']);
+
 // Delete
 Route::delete('/productindex/{id}', [ProductController::class, 'delete_product']);
 
@@ -98,7 +99,14 @@ Route::get('/clinique', [ProductController::class, 'showCliniqueProducts']);
 // Some By Mi Show products 
 Route::get('/somebymi', [ProductController::class, 'showSomeByMiProducts']);
 
+// SENSITIVE SKIN 
+Route::get('/allproducts', [ProductController::class, 'showAllProducts']);
 
+// User Accounts
+Route::get('/userAccounts', [UserController::class, 'showSensitiveSkin']);
+
+// User Accounts
+Route::get('/adminAccounts', [UserController::class, 'show_AdminAccounts']);
 
 // Logout
 Route::get('/logout', [UserController::class, 'logout']);

@@ -18,8 +18,6 @@ class ProductController extends Controller
     return view('Somebymi', compact('someByMiProducts'));
     }
     
-
-
     // Clinique Show products
     public function showCliniqueProducts() {
     // Fetch only Clinique products from the database

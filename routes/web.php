@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CartController;
 
 
 
@@ -100,5 +101,11 @@ Route::get('/somebymi', [ProductController::class, 'showSomeByMiProducts']);
 
 
 
+
 // Logout
 Route::get('/logout', [UserController::class, 'logout']);
+
+// Cart Table
+Route::get('/cart', [CartController::class, 'viewCart'])->name('cart.view');
+Route::post('/cart/add/{id}', [CartController::class, 'addToCart'])->name('cart.add');
+Route::post('/cart/remove/{id}', [CartController::class, 'removeFromCart'])->name('cart.remove');

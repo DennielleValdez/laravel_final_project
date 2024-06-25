@@ -75,7 +75,7 @@
                     
                     {{-- LOG OUT --}}
                     @if (Session::get('id'))
-                        <li><a class="dropdown-item" href="../User/logout.php">Logout</a></li>
+                        <li><a class="dropdown-item" href="/logout">Logout</a></li>
                     @else
 
                      <!-- SIGN UP & LOG IN -->

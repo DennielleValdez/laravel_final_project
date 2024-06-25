@@ -44,6 +44,11 @@ Route::post('/signup', [UserController::class, 'signup']);
 Route::get('/login', [UserController::class, 'show_login']);
 Route::post('/login', [UserController::class, 'login']);
 
+// Show Profile
+Route::get('/profile', [UserController::class, 'show_profile']);
+
+
+
 // Product routes
 Route::get('/productindex', [ProductController::class, 'index']);
 
@@ -92,3 +97,8 @@ Route::get('/clinique', [ProductController::class, 'showCliniqueProducts']);
 
 // Some By Mi Show products 
 Route::get('/somebymi', [ProductController::class, 'showSomeByMiProducts']);
+
+
+
+// Logout
+Route::get('/logout', [UserController::class, 'logout']);

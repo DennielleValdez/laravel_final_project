@@ -16,15 +16,39 @@
 
     <div class="container mt-5">
         <div class="card">
-            <div class="card-body">
-                <h1>Welcome to Radiant Ritual</h1>
-                <p>Hello, {{ Session::get('fname') }} {{ Session::get('lname') }}!</p>
-                @if (Session::get('role') == "1")
-                    <p><b>Role:</b> Admin</p>
-                @else
-                    <p><b>Role:</b> User</p>
-                @endif
-                <p>Enjoy your personalized shopping experience with us. Explore our exclusive collection and discover your radiant self!</p>
+            <div class="WelcomeCard-body">
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center align-items-center">
+                        <h2>Welcome to Radiant Rituals</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <hr>
+                        <p><b>Hello, {{ Session::get('fname') }} {{ Session::get('lname') }}!</b></p>
+                        <p>We're thrilled to have you join our community of skincare enthusiasts. At Radiant Rituals, we're dedicated to helping you discover the best products for your unique skincare needs. Whether you're looking to pamper yourself with luxurious treatments or find everyday essentials, we've got you covered.</p>
+                        <br>
+                        <p>
+                            To get started on your radiant journey, head over to our homepage and take our personalized skincare exam. It’s designed to help us tailor recommendations just for you!
+                        </p>
+                        <br>
+                    </div>
+
+                   
+                    {{-- BUTTONS --}}
+                    <div class="col-md-6">
+                        <!-- SKIP -->
+                        <div class="container mt-5">
+                            <a href="/" class="btn btn-outline-secondary w-100">Skip</a>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6">
+                    {{-- TAKE THE EXAM --}}
+                        <div class="container mt-5">
+                            <!-- Button that acts as a link -->
+                            <a href="" class="btn btn-outline-secondary w-100">Take the exam</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div> 
     </div> 

@@ -78,3 +78,7 @@ html body{
 .footer-container .text-center p {
     margin-bottom: 0;
 }
+
+.WelcomeCard-body{
+    padding: 50px;
+}

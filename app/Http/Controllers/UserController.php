@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\UsersTable;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth; // Import the Auth facade
 use Illuminate\Support\Facades\Hash;
 use Session;
 
 class UserController extends Controller
 {
 
-    
+
+
 
     // Log in result
     public function login(Request $request)

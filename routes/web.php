@@ -6,7 +6,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\FaveController;
 use App\Http\Controllers\SkinTypeController;
-
+use App\Http\Controllers\OrderSummaryController;
 
 
 
@@ -145,3 +145,7 @@ Route::get('/skinTestExam', [SkinTypeController::class, 'showSkinTypeTest'])->na
 Route::get('/skinTestExam', [SkinTypeController::class, 'showSkinTypeTest'])->name('skinTestExam.view');
 Route::post('/skinTestExam', [SkinTypeController::class, 'storeSkinTypeAnswers'])->name('skinTestExam.store');
 Route::get('/skinTestResult', [SkinTypeController::class, 'showSkinTypeResult'])->name('skinTestResult.view');
+
+
+// Order Summary Page
+Route::get('/ordersummary', [OrderSummaryController::class, 'viewOrderSummary']);

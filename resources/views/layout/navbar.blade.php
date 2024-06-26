@@ -70,7 +70,7 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user"></i> My Account</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/favorites">Favorites</a></li>
-                    <li><a class="dropdown-item" href="carttable.php">Order Summary</a></li>
+                    <li><a class="dropdown-item" href="/ordersummary">Order Summary</a></li>
                     <li><hr class="dropdown-divider"></li>
                     
                     {{-- LOG OUT --}}

@@ -54,7 +54,7 @@
             </table>
             <div class="d-flex justify-content-between align-items-center">
                 <h4>Total Amount: ${{ $total }}</h4>
-                <a href="" class="btn btn-secondary"><i class="fas fa-credit-card"></i> Proceed to Checkout</a>
+                <a href="/ordersummary" class="btn btn-secondary"><i class="fas fa-credit-card"></i> Proceed to Checkout</a>
             </div>
         @else
             <p>Your cart is empty.</p>

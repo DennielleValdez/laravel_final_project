@@ -159,9 +159,10 @@
             <div class="col-md-6">
                 <div class="joinText">
                     <h3>MAP</h3><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15445.062576224576!2d121.04845749951073!3d14.583933274404933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8142994ce0b%3A0xf7f3251bc576fd13!2sOrtigas%20Center%2C%20Pasig%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sus!4v1719392235040!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        
+            
             
         </div>
     </div>

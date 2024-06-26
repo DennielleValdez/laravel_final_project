@@ -6,6 +6,7 @@ use DB;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Session;
 
 
 

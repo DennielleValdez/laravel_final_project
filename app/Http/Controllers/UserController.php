@@ -23,7 +23,7 @@ class UserController extends Controller
             $request->session()->put('email', $user->user_email);
             $request->session()->put('role', $user->user_role);
 
-            if ($user->user_role == 1) {
+            if (Session::has('id') && Session::get('role') == 1 ) {
                 // Redirect admin user to productindex.blade.php
                 return redirect("/productindex");
             } else {
@@ -46,7 +46,15 @@ class UserController extends Controller
         // Fetch user details using the session user id
         $user = UsersTable::where('user_id', $user_id)->first();
 
-        return view('profile', compact('user'));
+        if (Session::has('id')) {
+            // Redirect admin user to productindex.blade.php
+            return view('profile', compact('user'));
+        } else {
+            // Redirect non-admin user to profile.blade.php
+            return redirect("/login");
+        }
+
+       
     }
 
 

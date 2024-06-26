@@ -45,7 +45,7 @@
                     {{-- TAKE THE EXAM --}}
                         <div class="container mt-5">
                             <!-- Button that acts as a link -->
-                            <a href="" class="btn btn-outline-secondary w-100">Take the exam</a>
+                            <a href="/skinTestExam" class="btn btn-outline-secondary w-100">Take the exam</a>
                         </div>
                     </div>
                 </div>

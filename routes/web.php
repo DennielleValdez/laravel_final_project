@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\FaveController;
+use App\Http\Controllers\SkinTypeController;
 
 
 
@@ -122,3 +123,6 @@ Route::post('/cart/remove/{id}', [CartController::class, 'removeFromCart'])->nam
 Route::get('/favorites', [FaveController::class, 'viewFavorites'])->name('favorites.view');
 Route::post('/favorites/add/{id}', [FaveController::class, 'addToFavorites'])->name('favorites.add');
 Route::post('/favorites/remove/{id}', [FaveController::class, 'removeFromFavorites'])->name('favorites.remove');
+
+// SKIN TEST
+Route::get('/skinTestExam', [SkinTypeController::class, 'showSkinTypeTest'])->name('skinTestExam.view');

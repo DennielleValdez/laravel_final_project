@@ -23,8 +23,8 @@
             <li><i class="fas fa-envelope"></i> Message <span style="color: #e91e63; margin-left: auto;">•</span></li>
             <li><i class="fas fa-cog"></i> Setting</li>
             <br>
-            <a class="nav-link" aria-current="page" href="/login">
-             <li> <i class="fa-solid fa-user"></i> Log out</li>
+            <a class="nav-link" aria-current="page" href="{{ url('/logout') }}">
+                <li><i class="fa-solid fa-user"></i> Log out</li>
             </a>
         </ul>
     </div>

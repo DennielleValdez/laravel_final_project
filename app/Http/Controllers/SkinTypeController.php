@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class SkinTypeController extends Controller
 {
@@ -43,7 +44,10 @@ class SkinTypeController extends Controller
         // Determine skin type based on answers
         $skinType = $this->determineSkinType($answers);
 
-        return view('skinTestResult', compact('skinType'));
+        // Fetch products based on skin type
+        $products = Product::where('skin_type', 'LIKE', '%' . $skinType . '%')->get();
+
+        return view('skinTestResult', compact('skinType', 'products'));
     }
 
     private function determineSkinType($answers)

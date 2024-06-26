@@ -9,6 +9,9 @@ use Session;
 
 class UserController extends Controller
 {
+
+    
+
     // Log in result
     public function login(Request $request)
     {

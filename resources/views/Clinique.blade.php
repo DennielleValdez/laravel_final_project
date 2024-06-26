@@ -63,7 +63,7 @@
                                 {{-- PRODUCT NAME --}}
                                 <h5 class="ProductCard-title truncate-1-line">{{ $product->product_name }}</h5>
                                 {{-- PRICE --}}
-                                <p class="ProductCard-text">{{$product->product_price}}</p>
+                                <p class="ProductCard-text">₱ {{$product->product_price}}</p>
 
                                 {{-- BUTTONS --}}
                                 <div class="ProductCard-footer mt-2">
@@ -106,40 +106,40 @@
             {{-- Sample article and tip cards --}}
             <div class="col-md-3 mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="../homeimg/14.png" class="card-img-top" alt="...">
+                    <img src="../homeimg/22.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Luxury Skincare 101</h5>
-                      <a href="https://www.esteelauder.com/blog-article-luxury-skincare" class="btn">View article>></a>
+                      <h5 class="card-title">Clinique's Skincare Line</h5>
+                      <a href="https://www.essenza.ng/blogs/tips-trends/why-cliniques-skincare-line-is-a-must-have-in-your-beauty-routine" class="btn">View article>></a>
                     </div>
                   </div>
             </div>
 
             <div class="col-md-3 mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="../homeimg/13.png" class="card-img-top" alt="...">
+                    <img src="../homeimg/23.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">The Beauty of Pride</h5>
-                      <a href="https://www.esteelauder.com/blog-article-celebrating-pride-month" class="btn">View article>></a>
+                      <h5 class="card-title">Q&A with Clinique</h5>
+                      <a href="https://www.lookfantastic.com/blog/discover/qa-with-clinique-all-your-skincare-questions-answered/" class="btn">View article>></a>
                     </div>
                   </div>
             </div>
 
             <div class="col-md-3 mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="../homeimg/12.png" class="card-img-top" alt="...">
+                    <img src="../homeimg/24.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Guide to Firmer Skin</h5>
-                      <a href="https://www.esteelauder.com/blog-article-firm-skin-tips" class="btn">View article>></a>
+                      <h5 class="card-title">Clinique: Exfoliate</h5>
+                      <a href="https://www.clinique.com/skin-school-blog/how-to/how-to-exfoliate" class="btn">View article>></a>
                     </div>
                   </div>
             </div>
 
             <div class="col-md-3 mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="../homeimg/11.png" class="card-img-top" alt="...">
+                    <img src="../homeimg/25.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Get The Look: Peach Makeup</h5>
-                      <a href="https://www.esteelauder.com/blog-article-peach-makeup-tutorial" class="btn">View article>></a>
+                      <h5 class="card-title">Clinique Skin Care Routine</h5>
+                      <a href="https://www.clinique.com/skin-school-blog/how-to/guide-to-healthy-skin" class="btn">View article>></a>
                     </div>
                   </div>
             </div>

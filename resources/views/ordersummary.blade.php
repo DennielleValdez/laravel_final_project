@@ -67,16 +67,16 @@
                             <tr>
                                 <td class="d-flex justify-content-center align-items-center"><img src="/img/{{ $details['image'] }}" height="80px" width="90px"></td>
                                 <td>{{ $details['name'] }}</td>
-                                <td>${{ $details['price'] }}</td>
+                                <td>₱ {{ $details['price'] }}</td>
                                 <td>{{ $details['quantity'] }}</td>
-                                <td>${{ $details['total'] }}</td>
+                                <td>₱ {{ $details['total'] }}</td>
                             </tr>
                         @endforeach
                     </tbody>
                 </table>
                 <div class="d-flex justify-content-between align-items-center">
-                    <h4>Total Amount: ${{ $total }}</h4>
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#confirmModal"><i class="fas fa-credit-card"></i> Place Order</button>
+                    <h4>Total Amount: ₱ {{ $total }}</h4>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#confirmModal"><i class="fas fa-credit-card"></i> Place Order</button>
                 </div>
             @else
                 <p>Your cart is empty.</p>

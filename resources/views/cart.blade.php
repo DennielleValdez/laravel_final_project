@@ -18,7 +18,7 @@
         <h3>Shopping Cart:</h3>
         <br>
         @if(session('success'))
-            <div class="alert alert-success">
+            <div class="alert alert-secondary">
                 {{ session('success') }}
             </div>
         @endif
@@ -39,9 +39,9 @@
                         <tr>
                             <td class="d-flex justify-content-center align-items-center"><img src="/img/{{ $details['image'] }}" height="80px" width="90px"></td>
                             <td>{{ $details['name'] }}</td>
-                            <td>${{ $details['price'] }}</td>
+                            <td>₱ {{ $details['price'] }}</td>
                             <td>{{ $details['quantity'] }}</td>
-                            <td>${{ $details['total'] }}</td>
+                            <td>₱ {{ $details['total'] }}</td>
                             <td>
                                 <form action="{{ route('cart.remove', $id) }}" method="POST">
                                     @csrf
@@ -53,7 +53,7 @@
                 </tbody>
             </table>
             <div class="d-flex justify-content-between align-items-center">
-                <h4>Total Amount: ${{ $total }}</h4>
+                <h4>Total Amount: ₱ {{ $total }}</h4>
                 <a href="/ordersummary" class="btn btn-secondary"><i class="fas fa-credit-card"></i> Proceed to Checkout</a>
             </div>
         @else

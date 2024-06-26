@@ -40,9 +40,9 @@
                         <tr>
                             <td class="d-flex justify-content-center align-items-center"><img src="/img/{{ $details['image'] }}" height="80px" width="90px"></td>
                             <td>{{ $details['name'] }}</td>
-                            <td>${{ $details['price'] }}</td>
+                            <td>₱ {{ $details['price'] }}</td>
                             <td>{{ $details['quantity'] }}</td>
-                            <td>${{ $details['total'] }}</td>
+                            <td>₱ {{ $details['total'] }}</td>
                             {{-- ADD TO CART BUTTON FROM FAVORITES--}}
                             <td>
                                 <form action="{{ route('cart.add', $id) }}" method="POST">
@@ -62,7 +62,7 @@
                 </tbody>
             </table>
             <div class="d-flex justify-content-end">
-                <h4>Total Amount: ${{ $total }}</h4>
+                <h4>Total Amount: ₱ {{ $total }}</h4>
             </div>
         @else
             <p>Your favorites is empty.</p>

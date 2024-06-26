@@ -80,7 +80,7 @@
                                 {{-- PRODUCT NAME --}}
                                 <h5 class="ProductCard-title truncate-1-line">{{ $product->product_name }}</h5>
                                 {{-- PRICE --}}
-                                <p class="ProductCard-text">{{$product->product_price}}</p>
+                                <p class="ProductCard-text">₱ {{$product->product_price}}</p>
 
                                 {{-- BUTTONS --}}
                                 <div class="ProductCard-footer mt-2">

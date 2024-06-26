@@ -73,7 +73,7 @@
             <h2>Discover your skin type</h2>
         </div>
         <div class="col-md-12 mt-2 d-flex justify-content-center align-items-center">
-            <button class="btn btn-outline-dark mt-3">Take the test now</button>
+            <a href="/skinTestExam" class="btn btn-outline-secondary">Take the test now</a>
         </div>
         <br><hr>
 
@@ -109,7 +109,7 @@
                     <p>Welcome to our comprehensive guide on how to use skincare products effectively. Proper application is key to maximizing the benefits of your skincare routine. Whether you are a skincare newbie or a seasoned enthusiast, our step-by-step guide will help you get the most out of your products.</p>
                     <br>
                     {{-- LEARN MORE --}}
-                    <a href="/" class="btn btn-outline-secondary">LEARN MORE</a>
+                    <a href="https://www.olay.com/skin-care-tips-and-articles/the-abcs-of-beauty-skin-perfecting-bb-and-cc-creams" class="btn btn-outline-secondary">LEARN MORE</a>
                 </div>
             </div>
             <hr>

@@ -1,0 +1,92 @@
+.card{
+    padding: 50px;
+}
+
+/* FOOTER */
+.footer-container {
+    background-color: #f8f9fa;
+    color: #212529;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-container h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 10px;
+}
+
+.footer-container ul li a {
+    color: #212529;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+    color: #007bff;
+}
+
+.footer-container .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-container .social-icons a {
+    color: #212529;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-container .social-icons a:hover {
+    color: #007bff;
+}
+
+/* Footer bottom text */
+.footer-container .text-center {
+    border-top: 1px solid #dee2e6;
+    padding-top: 10px;
+}
+
+.footer-container .text-center p {
+    margin-bottom: 0;
+}
+
+/* PRODUCT CARDS */
+
+.ProductCard{
+    box-shadow: 1px 1px 10px #212529;
+    padding: 30px;
+}
+
+.ProductCard img{
+    padding: 15px;
+}
+
+.ProductCard-title{
+    font-size: 15px;
+}
+
+.ProductCard-text{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fixed-size-card {
+    width: 250px; 
+    height: 450px;
+    overflow: hidden;
+}
+
+.truncate-1-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -63,7 +63,7 @@
                                 {{-- PRODUCT NAME --}}
                                 <h5 class="ProductCard-title truncate-1-line">{{ $product->product_name }}</h5>
                                 {{-- PRICE --}}
-                                <p class="ProductCard-text">{{$product->product_price}}</p>
+                                <p class="ProductCard-text">₱ {{$product->product_price}}</p>
 
                                 {{-- BUTTONS --}}
                                 <div class="ProductCard-footer mt-2">
@@ -100,20 +100,20 @@
             {{-- ARTICLES --}}
             <div class="col-md-3 mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="../homeimg/14.png" class="card-img-top" alt="...">
+                    <img src="../homeimg/26.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Luxury Skincare 101</h5>
-                        <a href="https://www.esteelauder.com/blog-article-luxury-skincare" class="btn">View article>></a>
+                        <h5 class="card-title">30 Days Miracle Line Review</h5>
+                        <a href="https://blog.beautybarn.in/somebymi-aha-bha-pha-30-days-miracle-line-review" class="btn">View article>></a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3 mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="../homeimg/13.png" class="card-img-top" alt="...">
+                    <img src="../homeimg/27.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">The Beauty of Pride</h5>
-                        <a href="https://www.esteelauder.com/blog-article-celebrating-pride-month" class="btn">View article>></a>
+                        <h5 class="card-title">Skincare Routine Order Explained</h5>
+                        <a href="https://www.chicsta.com/blogs/chicsta-blog-post/your-skincare-routine-order-explained-for-some-by-mi" class="btn">View article>></a>
                     </div>
                 </div>
             </div>
@@ -121,20 +121,20 @@
             {{-- TIPS --}}
             <div class="col-md-3 mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="../homeimg/12.png" class="card-img-top" alt="...">
+                    <img src="../homeimg/28.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Guide to Firmer Skin</h5>
-                        <a href="https://www.esteelauder.com/blog-article-firm-skin-tips" class="btn">View article>></a>
+                        <h5 class="card-title">The Essential 101 Guide</h5>
+                        <a href="https://www.k-beauty.co.uk/blogs/blog/the-essential-101-guide-to-some-by-mi-your-path-to-radiant-skin" class="btn">View article>></a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3 mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="../homeimg/11.png" class="card-img-top" alt="...">
+                    <img src="../homeimg/29.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Get The Look: Peach Makeup</h5>
-                        <a href="https://www.esteelauder.com/blog-article-peach-makeup-tutorial" class="btn">View article>></a>
+                        <h5 class="card-title">Routine With Some By Mi</h5>
+                        <a href="https://threebs.co/blogs/beauty-101/a-simple-guide-to-your-skincare-routine-with-some-by-mi" class="btn">View article>></a>
                     </div>
                 </div>
             </div>

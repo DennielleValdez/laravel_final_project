@@ -62,7 +62,7 @@
                                 {{-- PRODUCT NAME --}}
                                 <h5 class="ProductCard-title truncate-1-line">{{ $product->product_name }}</h5>
                                 {{-- PRICE --}}
-                                <p class="ProductCard-text">{{$product->product_price}}</p>
+                                <p class="ProductCard-text">₱ {{$product->product_price}}</p>
 
                                 {{-- BUTTONS --}}
                                 <div class="ProductCard-footer mt-2">
@@ -100,20 +100,20 @@
             {{-- Featured Articles Cards --}}
             <div class="col-md-3 mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="../homeimg/14.png" class="card-img-top" alt="...">
+                    <img src="../homeimg/18.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Luxury Skincare 101</h5>
-                        <a href="https://www.esteelauder.com/blog-article-luxury-skincare" class="btn">View article>></a>
+                        <h5 class="card-title">From the Rose to the Skin</h5>
+                        <a href="https://theglamandglitter.com/2020/11/dior-prestige-from-the-rose-to-the-skin/" class="btn">View article>></a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3 mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="../homeimg/13.png" class="card-img-top" alt="...">
+                    <img src="../homeimg/19.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">The Beauty of Pride</h5>
-                        <a href="https://www.esteelauder.com/blog-article-celebrating-pride-month" class="btn">View article>></a>
+                        <h5 class="card-title">Skin Care Essentials</h5>
+                        <a href="https://thehungrykat.com/post/169255693638/christiandior" class="btn">View article>></a>
                     </div>
                 </div>
             </div>
@@ -121,20 +121,20 @@
             {{-- Tips Cards --}}
             <div class="col-md-3 mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="../homeimg/12.png" class="card-img-top" alt="...">
+                    <img src="../homeimg/20.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Guide to Firmer Skin</h5>
-                        <a href="https://www.esteelauder.com/blog-article-firm-skin-tips" class="btn">View article>></a>
+                        <h5 class="card-title">Summer Beauty Buddies</h5>
+                        <a href="https://makeupandbeautyblog.com/category/dior-3/#google_vignette" class="btn">View article>></a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3 mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="../homeimg/11.png" class="card-img-top" alt="...">
+                    <img src="../homeimg/21.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Get The Look: Peach Makeup</h5>
-                        <a href="https://www.esteelauder.com/blog-article-peach-makeup-tutorial" class="btn">View article>></a>
+                        <h5 class="card-title">Morning Routine with Dior</h5>
+                        <a href="https://her-etiquette.com/conscious-beauty-my-morning-routine-with-dior/" class="btn">View article>></a>
                     </div>
                 </div>
             </div>

@@ -19,7 +19,15 @@ html body{
 /* BRANDS */
 
 .card {
-    box-shadow: 3px 3px 10px #212529;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover{
+    background-color: #f0f0f0; /* Change background color */
+    box-shadow: 3px 3px 10px #212529;/* Add shadow effect */
+    transform: scale(1.05); /* Slightly increase size */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 
 /* FOOTER */

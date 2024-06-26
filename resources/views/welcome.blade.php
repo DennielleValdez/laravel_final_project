@@ -85,8 +85,8 @@
                     <h2>Meet the Official Facial Cleanser of Team USA</h2>
                     <p>We assembled a team of all-star athletes to bring you a NEW kind of daily facial cleansers: CLeansing Melts! Try for yourself</p>
                     <br>
-                    {{-- SHOP NOW BUTTON --}}
-                    <button class="btn btn-outline-dark">SHOP NOW</button>
+                    {{-- SEE ALL PRODUCTS --}}
+                    <a href="/allproducts" class="btn btn-outline-secondary">SEE ALL PRODUCTS</a>
                 </div>
             </div>
         
@@ -108,15 +108,15 @@
                     <h2>Step-by-Step Guide to Using Skincare Products</h2>
                     <p>Welcome to our comprehensive guide on how to use skincare products effectively. Proper application is key to maximizing the benefits of your skincare routine. Whether you are a skincare newbie or a seasoned enthusiast, our step-by-step guide will help you get the most out of your products.</p>
                     <br>
-                    {{-- SHOP NOW BUTTON --}}
-                    <button class="btn btn-outline-dark">LEARN MORE</button>
+                    {{-- LEARN MORE --}}
+                    <a href="/" class="btn btn-outline-secondary">LEARN MORE</a>
                 </div>
             </div>
             <hr>
 
         {{-- BEST SELLERS --}}
             <div class="col-md-12 mt-3">
-                <h2>BRANDS:</h2>
+                <h3>BRANDS:</h3>
             </div>
 
             {{-- PRODUCT CARDS FROM DATA BASE --}}
@@ -130,7 +130,7 @@
             <div class="col-md-2 mt-3">
                 <div class="card-container">
                     <div class="card fixed-size-card" id="brandCards">
-                      <a href="Olay.php">
+                      <a href="/olay">
                         <img src="../homeimg/olay.png" class="card-img fixed-size-image" alt="...">
                         </a>
                     </div>
@@ -141,7 +141,7 @@
             <div class="col-md-2 mt-3">
                 <div class="card-container">
                     <div class="card fixed-size-card" id="brandCards">
-                      <a href="Olay.php">
+                      <a href="/esteelauder">
                         <img src="../homeimg/esteelauder.png" class="card-img fixed-size-image" alt="...">
                         </a>
                     </div>
@@ -152,7 +152,7 @@
             <div class="col-md-2 mt-3">
                 <div class="card-container">
                     <div class="card fixed-size-card" id="brandCards">
-                      <a href="Olay.php">
+                      <a href="/dior">
                         <img src="../homeimg/dior.png" class="card-img fixed-size-image" alt="...">
                         </a>
                     </div>
@@ -163,7 +163,7 @@
             <div class="col-md-2 mt-3">
                 <div class="card-container">
                     <div class="card fixed-size-card" id="brandCards">
-                      <a href="Olay.php">
+                      <a href="/clinique">
                         <img src="../homeimg/clinique.png" class="card-img fixed-size-image" alt="...">
                         </a>
                     </div>
@@ -174,7 +174,7 @@
              <div class="col-md-2 mt-3">
                 <div class="card-container">
                     <div class="card fixed-size-card" id="brandCards">
-                      <a href="Olay.php">
+                      <a href="/somebymi">
                         <img src="../homeimg/somebymi.png" class="card-img fixed-size-image" alt="...">
                         </a>
                     </div>

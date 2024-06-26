@@ -140,6 +140,7 @@
 
         <br>
 
+        {{-- BANNER --}}
         <div class="signUpBanner">
             <img src="../homeimg/OlayBanner2.jpg" class="about-img w-100" alt="...">
         </div>

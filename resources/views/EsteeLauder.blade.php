@@ -85,95 +85,97 @@
                     @endforeach
                 </div>
             </div>
+        </div>
 
 
         <br><hr>
 
        {{-- ARTICLES --}}
        <div class="row">
-        <div class="col-md-6 mt-3">
-            <h3>Featured Articles:</h3>
-        </div>
+            <div class="col-md-6 mt-3">
+                <h3>Featured Articles:</h3>
+            </div>
 
-        <div class="col-md-6 mt-3">
-            <h3>Tips:</h3>
-        </div>
+            <div class="col-md-6 mt-3">
+                <h3>Tips:</h3>
+            </div>
 
-        <div class="col-md-3 mt-3">
-            <div class="card" style="width: 18rem;">
-                <img src="../homeimg/article1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Mineral Vs. Chemical Sunscreens</h5>
-                    <a href="https://www.olay.com/skin-care-tips-and-articles/mineral-vs-chemical-sunscreens" class="btn">View article>></a>
+            <div class="col-md-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="../homeimg/12.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Beauty of Pride</h5>
+                        <a href="https://www.esteelauder.com/blog-article-celebrating-pride-month" class="btn">View article>></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="../homeimg/esteenews2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Estée Story</h5>
+                        <a href="https://www.elcompanies.com/en/who-we-are/the-lauder-family/the-estee-story" class="btn">View article>></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="../homeimg/14.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Skincare 101</h5>
+                        <a href="https://www.esteelauder.com/blog-article-luxury-skincare" class="btn">View article>></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="../homeimg/11.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Get The Look: Peach Makeup</h5>
+                        <a href="https://www.esteelauder.com/blog-article-peach-makeup-tutorial" class="btn">View article>></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-3 mt-3">
-            <div class="card" style="width: 18rem;">
-                <img src="../homeimg/article2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Bright and Hydrated Skin with Olay</h5>
-                    <a href="https://www.olay.com/skin-care-tips-and-articles/bright-and-hydrated-skin-to-the-max-with-olay-max" class="btn">View article>></a>
+        <br>
+        
+        {{-- BANNER --}}
+        <div class="signUpBanner">
+            <img src="../homeimg/esteelauderbanner2.jpg" class="about-img w-100" alt="...">
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mt-3">
+                <!-- Newsletter Section -->
+                <div class="newsletter-container">
+                    <h5>Sign Up for Our Newsletter</h5>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-3 mt-3">
-            <div class="card" style="width: 18rem;">
-                <img src="../homeimg/article3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">The ABCs of Beauty</h5>
-                    <a href="https://www.olay.com/skin-care-tips-and-articles/the-abcs-of-beauty-skin-perfecting-bb-and-cc-creams" class="btn">View article>></a>
+            <div class="col-md-6 mt-3">
+                <!-- Join Community Section -->
+                <div class="join-container">
+                    <h5>Join Estee Lauder Community</h5>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">Register Now</button>
+                    </form>
                 </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 mt-3">
-            <div class="card" style="width: 18rem;">
-                <img src="../homeimg/article4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">The Truth About Retinol</h5>
-                    <a href="https://www.olay.com/skin-care-tips-and-articles/the-truth-about-retinol" class="btn">View article>></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <br>
-    
-    {{-- BANNER --}}
-    <div class="signUpBanner">
-        <img src="../homeimg/esteelauderbanner2.jpg" class="about-img w-100" alt="...">
-    </div>
-
-    <div class="row">
-        <div class="col-md-6 mt-3">
-            <!-- Newsletter Section -->
-            <div class="newsletter-container">
-                <h5>Sign Up for Our Newsletter</h5>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="col-md-6 mt-3">
-            <!-- Join Community Section -->
-            <div class="join-container">
-                <h5>Join Estee Lauder Community</h5>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit">Register Now</button>
-                </form>
             </div>
         </div>
     </div>
 
     @include('layout.footer')
 
-    <!-- BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-</html>
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>>

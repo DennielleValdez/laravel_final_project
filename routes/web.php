@@ -9,9 +9,22 @@ use App\Http\Controllers\SkinTypeController;
 
 
 
+
 // Home and other pages
 Route::get('/', function () {
-    return view('welcome');
+    if (Session::has('id') && Session::get('role') == 0 ) {
+        // To user site
+        return view('welcome');
+    } 
+        // To admin site
+    elseif (Session::has('id') && Session::get('role') == 1 ){
+        return view('productindex');
+    }
+    else {
+        // If No ID
+        return redirect("/login");
+    }
+    
 });
 
 Route::get('/about', function () {
@@ -112,6 +125,7 @@ Route::get('/adminAccounts', [UserController::class, 'show_AdminAccounts']);
 
 // Logout
 Route::get('/logout', [UserController::class, 'logout']);
+// Route::get('/logout', [ProductController::class, 'logout']);
 
 // Cart Table
 Route::get('/cart', [CartController::class, 'viewCart'])->name('cart.view');
@@ -126,3 +140,8 @@ Route::post('/favorites/remove/{id}', [FaveController::class, 'removeFromFavorit
 
 // SKIN TEST
 Route::get('/skinTestExam', [SkinTypeController::class, 'showSkinTypeTest'])->name('skinTestExam.view');
+
+// SKIN TEST
+Route::get('/skinTestExam', [SkinTypeController::class, 'showSkinTypeTest'])->name('skinTestExam.view');
+Route::post('/skinTestExam', [SkinTypeController::class, 'storeSkinTypeAnswers'])->name('skinTestExam.store');
+Route::get('/skinTestResult', [SkinTypeController::class, 'showSkinTypeResult'])->name('skinTestResult.view');
